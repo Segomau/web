@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiMercadoLocal - Prototipo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MiMercadoLocal</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#mi-pedido">Mi Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a MiMercadoLocal</h2>
+        <p>Explora nuestro catálogo de productos frescos y de calidad, todos seleccionados especialmente para ti.</p>
+        <p>Disfruta de la comodidad de comprar productos locales desde la comodidad de tu hogar.</p>
+        <img src="https://i.pinimg.com/originals/0b/99/05/0b9905973da39d08a54d51c3ac017f06.jpg" alt="Bienvenida a MiMercadoLocal" class="imagen-bienvenida">
+    </section>
+
+    <section id="catalogo" class="catalogo">
+        <h2>Catálogo de Productos</h2>
+        <div class="productos-container">
+            <div class="producto" data-id="1">
+                <img src="https://buenprovecho.hn/wp-content/uploads/2020/10/Lechuga_2.jpg" alt="Lechuga">
+                <div class="info">
+                    <h3>Lechuga</h3>
+                    <p>Lechuga fresca y crujiente, ideal para ensaladas.</p>
+                    <p class="precio">$8.00</p>
+                    <button class="btn-comprar">Añadir al Pedido</button>
+                    <button class="btn-detalle">Ver Detalle</button>
+                </div>
+            </div>
+            <div class="producto" data-id="2">
+                <img src="https://th.bing.com/th/id/OIP.Shj94inJbd41XKapZrwcjgHaE8?rs=1&pid=ImgDetMain" alt="Jitomate">
+                <div class="info">
+                    <h3>Jitomate</h3>
+                    <p>Jitomates frescos y jugosos, perfectos para cualquier receta.</p>
+                    <p class="precio">$10.00</p>
+                    <button class="btn-comprar">Añadir al Pedido</button>
+                    <button class="btn-detalle">Ver Detalle</button>
+                </div>
+            </div>
+            <div class="producto" data-id="3">
+                <img src="https://i0.wp.com/quimicaencasa.com/wp-content/uploads/2016/04/azucar.jpg?fit=2507%2C1673&ssl=1" alt="Azúcar">
+                <div class="info">
+                    <h3>Azúcar</h3>
+                    <p>Azúcar blanca, de calidad superior para todo tipo de postres.</p>
+                    <p class="precio">$5.00</p>
+                    <button class="btn-comprar">Añadir al Pedido</button>
+                    <button class="btn-detalle">Ver Detalle</button>
+                </div>
+            </div>
+            <div class="producto" data-id="4">
+                <img src="https://th.bing.com/th/id/R.17acc9aaf7535b5980fb2a59daf8370e?rik=f%2b%2fqC3oQ3lSczg&pid=ImgRaw&r=0" alt="Rambutan">
+                <div class="info">
+                    <h3>Rambutan</h3>
+                    <p>Fruto exótico, dulce y jugoso. ¡Un manjar tropical!</p>
+                    <p class="precio">$12.00</p>
+                    <button class="btn-comprar">Añadir al Pedido</button>
+                    <button class="btn-detalle">Ver Detalle</button>
+                </div>
+            </div>
+            <div class="producto" data-id="5">
+                <img src="https://i.blogs.es/1fb60e/650_1200/1366_2000.jpg" alt="Carambolo">
+                <div class="info">
+                    <h3>Carambolo</h3>
+                    <p>Fruto exótico con forma de estrella, perfecto para ensaladas.</p>
+                    <p class="precio">$18.00</p>
+                    <button class="btn-comprar">Añadir al Pedido</button>
+                    <button class="btn-detalle">Ver Detalle</button>
+                </div>
+            </div>
+            <div class="producto" data-id="6">
+                <img src="https://th.bing.com/th/id/OIP.fFewI4pu_2QUfy_uINgjUwHaEM?rs=1&pid=ImgDetMain" alt="Huevos">
+                <div class="info">
+                    <h3>Huevos</h3>
+                    <p>Huevos frescos de gallina, ideales para cualquier plato.</p>
+                    <p class="precio">$3.50</p>
+                    <button class="btn-comprar">Añadir al Pedido</button>
+                    <button class="btn-detalle">Ver Detalle</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mi-pedido" class="mi-pedido">
+        <h2>Mi Pedido</h2>
+        <ul id="pedido-lista">
+            <li>No hay productos en el pedido.</li>
+        </ul>
+        <button id="finalizar-pedido">Finalizar Pedido</button>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-nombre"></h3>
+            <p id="modal-descripcion"></p>
+            <p class="precio" id="modal-precio"></p>
+            <button id="btn-agregar-modal">Añadir al Pedido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
